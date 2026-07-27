@@ -1,8 +1,26 @@
 aid: hyperganic
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hyperganic.png
 name: Hyperganic
-description: 'Hyperganic is a company surfaced as a portfolio company of hv-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: deep-tech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Hyperganic is a Munich- and Singapore-based deep-tech software company building algorithmic
+  engineering technology for additive manufacturing (3D printing). Its flagship product, HyDesign, is a
+  browser-based application for creating, customizing, and optimizing 3D-printed latticed parts, combining
+  implicit (meshless) modeling with validated materials and cloud simulation. Capabilities include lattice
+  grading, TPMS structures, shell/offset and emboss/skin editing, image modulation, meshless linear-elastic
+  simulation, topology optimization, and Lattice Boltzmann CFD. It serves lightweighting, thermal management,
+  metamaterials, mass customization, tooling, and bioengineering use cases across aerospace, automotive, and
+  sports. Backed by HV Capital. Hyperganic does not publish a public developer API, SDK, or developer portal;
+  this profile captures its public identity and web properties.'
 url: https://raw.githubusercontent.com/api-evangelist/hyperganic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +30,45 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Deep Tech
+- Additive Manufacturing
+- 3D Printing
+- Generative Design
+- Algorithmic Engineering
+- Simulation
+- Computational Design
 apis: []
+common:
+- type: DomainSecurity
+  url: security/hyperganic-domain-security.yml
+- type: Website
+  url: https://hyperganic.com
+- type: Pricing
+  url: https://hyperganic.com/pricing
+- type: SignUp
+  url: https://hyperganic.com/pricing
+  name: Start your 30-day free trial
+- type: Blog
+  url: https://hyperganic.com/press-and-stories
+  name: Press and stories
+- type: Support
+  url: https://hyperganic.com/contact
+  name: Contact
+- type: PrivacyPolicy
+  url: https://hyperganic.com/privacy-policy
+- type: TermsOfService
+  url: https://hyperganic.com/legal
+  name: Legal notice
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
